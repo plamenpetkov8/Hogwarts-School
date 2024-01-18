@@ -1,0 +1,28 @@
+:root {
+  --color-bg: #123e66;
+}
+
+#root {
+  flex-grow: 1;
+  display: "flex";
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  background-size: 100% 100%;
+  background-image: url("bg.png");
+}
+
+/* .MuiSvgIcon-root */
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .MuiListItemIcon-root {
+  color: #fff;
+}
