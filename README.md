@@ -26,9 +26,13 @@ The project was developed using Node 16 (You could use `nvm` to easily install a
 1. Download in a directory of your choosing using any of the following:
 
    - Over SSH:
-     `git clone git@github.com:plamenpetkov8/Hogwarts-School.git`
+     ```bash
+     git clone git@github.com:plamenpetkov8/Hogwarts-School.git
+     ```
    - Over HTTP:
-     `git clone https://github.com/plamenpetkov8/Hogwarts-School.git`
+     ```bash
+     git clone https://github.com/plamenpetkov8/Hogwarts-School.git
+     ```
 
 2. Navigate to the root of the newly dowloaded project
 3. Install module's dependencies:
