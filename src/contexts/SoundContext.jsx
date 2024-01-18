@@ -10,14 +10,7 @@ function SoundProvider({ children }) {
     interrupt: true,
   });
 
-  // useEffect(() => {
-  //   play();
-
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
-
   useEffect(() => {
-    console.log(sound);
     if (sound) sound.loop = true;
 
     play();

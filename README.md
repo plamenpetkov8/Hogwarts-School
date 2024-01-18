@@ -27,7 +27,7 @@ The project was developed using Node 16 (You could use `nvm` to easily install a
 
    - Over SSH:
      `git clone git@github.com:plamenpetkov8/Hogwarts-School.git`
-   - over HTTP:
+   - Over HTTP:
      `git clone https://github.com/plamenpetkov8/Hogwarts-School.git`
 
 2. Navigate to the root of the newly dowloaded project
