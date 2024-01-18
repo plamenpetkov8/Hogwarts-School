@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Alert } from "@mui/material";
 import { DataGrid, getGridStringOperators } from "@mui/x-data-grid";
 
 import { useHouses } from "../contexts/HousesContext";
@@ -10,7 +11,9 @@ import {
   getFilterPanelCss,
   rootCss,
 } from "../css/housetable";
-import { Alert } from "@mui/material";
+import GridFilterAltIcon from "./icons/GridFilterAltIcon";
+import GridArrowUpwardIcon from "./icons/GridArrowUpwardIcon";
+import GridArrowDownwardIcon from "./icons/GridArrowDownwardIcon";
 
 function HousesTable() {
   const [optionBgc, setOptionBgc] = useState("white");
@@ -68,7 +71,16 @@ function HousesTable() {
         hideFooter
         rows={data}
         columns={columns}
+        rowSelection={false}
         disableColumnSelector
+        classes={{
+          icon: "red",
+        }}
+        slots={{
+          columnMenuFilterIcon: GridFilterAltIcon,
+          columnMenuSortAscendingIcon: GridArrowUpwardIcon,
+          columnMenuSortDescendingIcon: GridArrowDownwardIcon,
+        }}
         slotProps={{
           columnMenu: {
             sx: columnMenuCss,

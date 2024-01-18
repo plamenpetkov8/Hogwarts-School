@@ -13,20 +13,17 @@ const columnMenuCss = {
 
 const dataGridCss = {
   color: DEFAULT_TEXT_COLOR,
-  "& .MuiDataGrid-sortIcon, & .MuiDataGrid-menuIconButton, & .MuiDataGrid-filterFormValueInput, & .MuiDataGrid-headerFilterRow, & .MuiDataGrid-toolbarFilterList":
-    {
-      color: DEFAULT_TEXT_COLOR,
-      fontWeight: 700,
-    },
+  "& .MuiDataGrid-sortIcon, & .MuiDataGrid-menuIconButton": {
+    color: DEFAULT_TEXT_COLOR,
+    fontWeight: 700,
+  },
   "& .MuiDataGrid-filterIcon": {
     color: DEFAULT_TEXT_COLOR,
   },
-  "& .MuiDataGrid-panel .MuiDataGrid-paper .MuiDataGrid-panelWrapper .MuiDataGrid-panelContent .MuiDataGrid-filterForm":
-    {
-      color: DEFAULT_TEXT_COLOR,
-    },
-  "& svg": {
-    color: "white",
+
+  "& .MuiDataGrid-menuList * div": {
+    backgroundColor: "red",
+    cursor: "crosshair",
   },
 };
 
